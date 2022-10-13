@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+
+.tabela{
+  background-color: rgb(238, 235, 235);
+  width: 100%;
+  color: black;
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  align-items: center;
+}
+
+td{
+  width: 17rem;
+}
+.botoes{
+  display: flex;
+}
+.botao_editar{
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+  text-align: top;
+  color: #171a7a;
+  border: #171a7a solid 2px;
+}
+.botao_excluir{
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+  text-align: top;
+  color: #171a7a;
+  border: #171a7a solid 2px;
+  margin-left: 15px;
+}
+img{
+  width: 20px;
+}

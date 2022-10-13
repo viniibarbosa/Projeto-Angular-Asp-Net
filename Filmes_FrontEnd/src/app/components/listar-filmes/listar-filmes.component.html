@@ -1,0 +1,30 @@
+<section class="container">
+  <table cellspacing="0" class="tabela">
+
+
+    <thead class="cabecalho">
+        <td>Id</td>
+        <td>Nome Do Filme</td>
+        <td>Duração</td>
+        <td>Diretor</td>
+        <td></td>
+    </thead>
+
+
+    <tbody class="app" *ngFor="let filme of listaFilmes" >
+      <app-filme class="app" [filmes]="filme"></app-filme>
+    </tbody>
+
+  </table>
+
+</section>
+<section class="botao_container">
+  <button class="botao">
+    <h2>ADICIONAR FILME</h2>
+  </button>
+</section>
+
+
+
+
+

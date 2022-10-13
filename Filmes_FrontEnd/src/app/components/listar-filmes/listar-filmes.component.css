@@ -1,0 +1,53 @@
+.container{
+  width: 100%;
+  display: flex;
+  color: white;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.tabela{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+.cabecalho{
+  height: 2rem;
+  background-color: #40177a;
+}
+td{
+  width: 17rem;
+  border-collapse: collapse;
+  font-family: 'Inter', sans-serif;
+
+}
+H2{
+  font-family: 'Inter', sans-serif;
+  font-size: medium;
+
+}
+tbody
+{
+  background-color: #86ff9e;
+}
+.app{
+  display: flex;
+  flex-direction: column;
+}
+.botao{
+  border: #220052 2px solid;
+  border-radius: 15px;
+  background-color: #40177a;
+  color: white;
+  padding: 2px 15px;
+}
+.botao_container{
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+@media (max-width: 900px) {
+  .tabela{
+    width: 100%;
+  }
+}

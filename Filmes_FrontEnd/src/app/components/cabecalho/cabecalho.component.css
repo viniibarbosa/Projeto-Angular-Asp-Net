@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+.cabecalho{
+  background-color: #40177a;
+  padding: 1rem 0rem;
+  display: flex;
+  justify-content: center;
+}
+
+.titulo{
+  font-family: 'Inter', sans-serif;
+  color: white;
+}
