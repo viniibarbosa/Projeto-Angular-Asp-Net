@@ -1,3 +1,5 @@
+import { Router } from '@angular/router';
+import { FilmeService } from './../../filme.service';
 import { Component, Input, OnInit } from '@angular/core';
 import {Filme} from '../../Filme'
 
@@ -16,10 +18,22 @@ export class FilmeComponent implements OnInit {
     diretor: "f"
   }
 
-  constructor() { }
+  constructor(private service: FilmeService, private router: Router) { }
 
   ngOnInit(): void {
 
   }
 
+  excluir(): void{
+
+    if(this.filmes.filmeId){
+      this.service.deletar(this.filmes.filmeId).subscribe(
+        ()=> {
+          this.router.navigate(['filmes'])
+        }
+      )
+    }
+  }
+
+  
 }

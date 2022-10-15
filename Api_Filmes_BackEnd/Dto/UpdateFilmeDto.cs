@@ -8,6 +8,8 @@ namespace Api_Filmes_BackEnd.Dto
 {
     public class UpdateFilmeDto
     {
+        public int FilmeId { get; set; }
+
         [Required(ErrorMessage = "O nome do filme é obrigatório"), StringLength(50, ErrorMessage = "Máximo de caracteres: ")]
         public string NomeDoFilme { get; set; }
         [Required(ErrorMessage = "A duração do filme é obrigatória"), Range(30, 500)]

@@ -65,9 +65,12 @@ namespace Api_Filmes_BackEnd.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult AtualizaFilme(int id, [FromBody] UpdateFilmeDto filmeDto)
+        public IActionResult AtualizaFilme(UpdateFilmeDto filmeDto)
         {
-            Filme filme = _contexto.Filmes.FirstOrDefault(filme => filme.FilmeId == id);
+            Console.WriteLine(filmeDto.FilmeId);
+            Console.WriteLine(filmeDto.Duracao);
+
+            Filme filme = _contexto.Filmes.FirstOrDefault(filme => filme.FilmeId == filmeDto.FilmeId);
             if (filme == null)
             {
                 return NotFound();

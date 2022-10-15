@@ -1,6 +1,6 @@
 export interface Filme
 {
-  filmeId: number,
+  filmeId?: number,
   nomeDoFilme: string,
   duracao: number,
   diretor: string

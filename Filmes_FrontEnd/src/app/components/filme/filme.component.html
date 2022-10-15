@@ -4,11 +4,11 @@
   <td>{{filmes.duracao}}</td>
   <td>{{filmes.diretor}}</td>
   <td class="botoes">
-    <button class="botao_editar">
+    <button class="botao_editar" routerLink="editarFilme/{{filmes.filmeId}}">
       <img src="../../../assets/icone-editar.png" alt="">
       Editar
     </button>
-      <button class="botao_excluir">
+      <button class="botao_excluir" (click)="excluir()">
         <img src="../../../assets/icone-excluir.png" alt="">
         Excluir
       </button>

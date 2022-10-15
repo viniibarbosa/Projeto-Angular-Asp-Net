@@ -23,7 +23,8 @@ td{
 H2{
   font-family: 'Inter', sans-serif;
   font-size: medium;
-
+  font-weight: bolder;
+  
 }
 tbody
 {
@@ -37,6 +38,8 @@ tbody
   border: #220052 2px solid;
   border-radius: 15px;
   background-color: #40177a;
+  width: 400px;
+  height: 50px;
   color: white;
   padding: 2px 15px;
 }

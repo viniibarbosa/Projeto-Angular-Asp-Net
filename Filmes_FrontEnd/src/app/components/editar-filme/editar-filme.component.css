@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+.modal {
+  background: #fff;
+  box-shadow: 15px 15px 10px 10px #40177a;
+  min-width: 360px;
+  min-height: 300px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  padding: 24px;
+  transform: translate(-50%, -50%);
+  z-index: 11;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.formulario{
+  display: flex;
+  flex-direction: column;
+}
+.titulo{
+  font-family: 'Inter', sans-serif;
+  color: #40177a;
+}
+.icons{
+  width: 20px;
+  height: 20px;
+}
+.container_input{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+input{
+  border: rgb(98, 97, 97) 2px solid;
+  width: 300px;
+  height: 30px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+.botao{
+  width: 125px;
+  height: 40px;
+  background-color: #40177a;
+  margin-left: 5px;
+  border: #979797 solid 2px;
+  border-radius: 10px;
+  color: white;
+}
+.container_botoes{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
